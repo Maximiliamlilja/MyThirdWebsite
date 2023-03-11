@@ -1,0 +1,119 @@
+html {
+  background-color: white;
+}
+
+body {
+  width: 90%;
+  margin: 5%;
+  background-color: azure;
+}
+
+#flex-header {
+  padding: 20px;
+  display: flex;
+  align-items: stretch;
+  height: 100px;
+}
+
+#flex-header h1 {
+  flex-grow: 9;
+  margin: 0px;
+  font-size: 100px;
+  padding-left: 20px;
+}
+
+#flex-header img {
+  flex-grow: 0;
+  width: 100px;
+  height: 100px;
+}
+
+#global-nav {
+  padding: 10px;
+}
+
+#global-nav nav {
+  padding: 0px;
+}
+
+#global-nav ul {
+  padding: 0px;
+  background-color: white;
+}
+
+#global-nav li {
+  list-style-type: none;
+  width: fit-content;
+  background-color: azure;
+  display: inline-block;
+  padding: 10px;
+  outline: 1px solid black;
+}
+
+#global-nav a {
+  font-size: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 1330px) {
+  body {
+    width: 90%;
+    margin: 5%;
+  }
+  #flex-header {
+    height: auto;
+    align-items: center;
+  }
+
+  #flex-header h1 {
+    font-size: 50px;
+    height: auto;
+  }
+
+  #flex-header img {
+    height: 50px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 90%;
+    margin: 5%;
+  }
+  #flex-header {
+    height: auto;
+    align-items: center;
+  }
+
+  #flex-header h1 {
+    font-size: 40px;
+    height: auto;
+  }
+
+  #flex-header img {
+    height: 50px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  body {
+    width: 90%;
+    margin: 5%;
+  }
+  #flex-header {
+    height: auto;
+    align-items: center;
+  }
+
+  #flex-header h1 {
+    font-size: 30px;
+    height: auto;
+  }
+
+  #flex-header img {
+    height: 40px;
+    width: auto;
+  }
+}
