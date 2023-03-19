@@ -8,6 +8,41 @@ body {
   background-color: azure;
 }
 
+.company-grid {
+  display: grid;
+  background-color: rgb(190, 240, 170);
+  grid-template-columns: max-content auto;
+}
+.company-grid-logo {
+  padding: 10px;
+}
+.company-grid-logo div {
+  outline-style: double;
+}
+
+.company-grid-info {
+  background-color: rgb(190, 240, 170);
+}
+
+.company-grid-info div {
+  padding: 10px;
+  height: 255px;
+}
+.company-grid-info h1 {
+  margin: 0px;
+}
+.company-grid-info a {
+  color: black;
+}
+
+.company-grid-info a:hover {
+  color: blue;
+}
+.company-grid-info p {
+  border-style: inset;
+  padding: 10px;
+}
+
 #flex-header {
   padding: 20px;
   display: flex;
@@ -55,13 +90,10 @@ body {
   color: black;
 }
 
-#local-nav
-{
+#local-nav {
   padding-left: 50px;
-  
 }
-#local-nav li
-{
+#local-nav li {
   list-style-type: none;
   width: fit-content;
   background-color: azure;
@@ -74,7 +106,6 @@ body {
   font-size: 16px;
   color: black;
 }
-
 
 @media screen and (max-width: 1330px) {
   body {
