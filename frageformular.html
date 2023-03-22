@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ställ en Fråga</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div id="flex-header">
+      <img
+        src="images/sidanslogo.png"
+        alt="En png bild på en sprinkler som är sidans logo."
+      />
+      <h1>Sprinkler entusiaster</h1>
+    </div>
+    <nav id="global-nav">
+      <ul>
+        <li><a href="index.html">Framsida</a></li>
+        <li><a href="sprinklersystem.html">Sprinkler system</a></li>
+        <li><a href="sprinklerforetag.html">Sprinkler företag</a></li>
+        <li><a href="frageformular.html">Ställ en Fråga</a></li>
+        <li><a href="rapport.html">Rapport</a></li>
+      </ul>
+    </nav>
+
+    <form action="#" method="get" class="question-form">
+      <label>Företag</label>
+
+      <input type="radio" name="questionfrom" value="company" />
+
+      <label for="">Privat person</label>
+      <input type="radio" name="questionfrom" value="indevidual" />
+
+      <br />
+      <label for="firstname">Förnamn</label>
+      <br />
+
+      <input type="text" name="firstname" id="firstname" />
+      <br />
+
+      <label for="lastname">Efternamn</label>
+      <br />
+
+      <input type="text" name="lastname" id="lastname" />
+      <br />
+      <label for="contactinfo">E-Mail address</label>
+
+      <br />
+      <input type="email" name="contactinfo" />
+      <br />
+
+      <label for="contactinfo">Telefon nummer</label>
+      <br />
+
+      <input type="tel" name="contactinfo" />
+      <br />
+
+      <label for="reason for question">Varför ställer du frågan?</label>
+      <br />
+
+      <input type="text" name="reason" />
+      <br />
+      <label for="description of building">Kort beskrivning av byggnaden</label>
+      <br />
+      <textarea
+        name="description"
+        id="description"
+        cols="50"
+        rows="10"
+      ></textarea>
+      <br />
+      <label>Fråga</label>
+      <br />
+      <textarea name="question" id="question" cols="100" rows="10"></textarea>
+      <br />
+      <input type="button" value="Skicka" />
+    </form>
+  </body>
+</html>
