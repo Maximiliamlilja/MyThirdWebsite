@@ -43,19 +43,21 @@
       <section>
         <h2>1. Syfte och målgrupp</h2>
         <p>
-          I uppgiften skapades en webbplats för ... Information kring sprinkler
-          och sprinkler system.
+          Webbplatsen skapades för att informera privat och företag kring
+          sprinkler och sprinkler system.
+
           <!-- Privat personen och företag. -->
         </p>
         <p>
-          Syfte med webbplatsen är ... Att informaera privat persoenr samt
-          företag om sprinkler system
+          Att infomera personer och företag kring sprinkler system samt
+          annonsera sprinkler företag som kan utföra deras intressen.
           <!-- Fyll på med kort beskrivning som anger syftet. -->
           <!-- Alltså syfte och mål med webbplatsen för företaget eller organisationen. -->
         </p>
         <p>
-          Målgruppen består av ... Kunder för framtida sprinkler bolag. Både
-          privat och förtag.
+          Målgruppen är personer eller företag som nyligen renoverade eller
+          byggde lokaler som behöver sprinkler system innan dom kan börja
+          användas.
           <!-- Fyll på med beskrivning som identifierar målgruppen. -->
           <!-- Ange också eventuell uppdelning i delgrupper. -->
         </p>
@@ -63,12 +65,11 @@
         Kundernas behov är.
         <!-- Skriv korta punkter som beskriver vilka behov webbplatsen ska uppfylla. -->
         <ul>
-          <li>Om de behöver ett sprinkler system.</li>
-          <li>Varför de skulle behöva ett sprinkler system</li>
-          <li>
-            Hitta företag som kan utföra installeringen av sprinkler system
-          </li>
-          <li>Ge allmän infomation om sprinkler och sprinkler system</li>
+          <li>Om lokalen behöver ett sprinklersystem.</li>
+          <li>Ett tredje parties konsult.</li>
+          <li>Varför lokalen behöver ett sprinklersystem.</li>
+          <li>Fördelarna med att ha ett sprinklersystem.</li>
+          <li>Utlägg till sprinkler företag.</li>
         </ul>
       </section>
       <section>
@@ -77,37 +78,100 @@
         <h3>Innehåll</h3>
         <!-- Skriv korta konkreta och mätbara krav som beskriver VAD innehållet ska bestå av. -->
         <ul>
-          <li>Information kring sprinkler.</li>
+          <li>Allmän information om sprinkler system.</li>
+          <li>Specific information kring vissa sprinkler.</li>
+          <li>Information på vilka lokaler behöver ett sprinklersystem.</li>
           <li>
-            Inforation kring när och vad för sprinkler en byggnad kan behöva.
+            Lista på företag som ligger i olika delar av sverige och inte alla
+            på samma plats.
           </li>
-          <li>
-            Inforationn om företag som kan installera olika sprinkler system.
-          </li>
+          <li>Fördelen med att ha ett sprinklersystem.</li>
+          <li>Varför lokalen behöver ett sprinklersystem.</li>
         </ul>
         <h3>Funktion</h3>
         <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
         <ul>
           <li>
-            Hitta förtag som kan installera sprinkler systemet du avgjort att du
-            behöver
+            Användaren ska kunna avgöra om deras lokal behöver installera ett
+            sprinklersystem.
           </li>
-          <li>Avgöra vilket sprinkler system du behöver</li>
-          <li>Få en överblick på olika sprinkler system</li>
+          <li>Hitta ett företag sprinkler företag installerar system.</li>
+          <li>
+            Kunna fråga efter mer information ifall de inte kan hitta vad dom
+            behöver veta genom andra delar av sidan i form av ett formulär.
+          </li>
         </ul>
       </section>
       <section>
         <h2>3. Beskrivning av arbetet</h2>
         <!-- Beskriv hur du arbetat med uppgiften. -->
         <!-- För VG är det viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
+
         <p>
-          Jag började jobba på sidan innan min rapport var klar men endast för
-          att skapa två navigerings system, ett globalt och ett lokalt.
-          Samtigidigt hade jag ställt frågan kring vilken information en kund
-          behövde för att installera ett sprinkler system. Frågan ställdes till
-          min pappa som har jobbat med sprinkler i nästan 40 år på ett flertal
-          bolag han upperapade sedan frågan till andra personer på bolaget bland
-          annat dom som har kontakt med kunderna. Vilka är sidans målgrupp..
+          Nav och header. Jag startade med att skapa ett lokalt och ett globalt
+          navigeringssystem. Över det globala sitter det en header som säger
+          sidans namn “sprinkler entusiaster” och bredvid sitter det en bild på
+          en sprinkler bilden är png så dess bakgrund är densamma som allt
+          annat. När det gäller header och logon så använde jag display: flex
+          och aling items som strech jag satte också flex-grow till nio för text
+          delen och noll för bild delen. Detta är för att bildens dimensioner
+          inte skulle följa ändrandet av sidans storlek lika bra som vanlig text
+          kan. När det gäller båda navigerings systemen så är dom unika vilket
+          inte blir något problem eftersom en sida inte alltså .html inte kommer
+          ha fler än ett globalt nav system och ett lokalt nav system. Sprinkler
+          företagssidan. Jag började sedan jobba på sidan som skulle innehålla
+          ett antal olika sprinkler bolag. Jag valde ut fyra företag laddade ner
+          deras loggor justerade dom, se bild dokumenteringen innan jag lade
+          till dom till sidan. För att hålla dessa bilder samt övriga
+          information skapade jag en display grid med två kolumner den på höger
+          som innehåll bilden sattes till 30% medans den andra sattes till 70%.
+          Runt bilderna satte jag en vanlig dubbel ram så att de skulle skilja
+          sig mer från allt annat. Jag gjorde något liknande med info texten men
+          istället för en dubbel ram använde jag en inset border. Där i jag
+          skapade ett p element som kommer innehålla företagets information.
+          Ovanför denna ram och text satte jag en h1 header inuti ett a element
+          så att man kan klicka på företagets namn och tas till deras hemsida.
+          På grund av a element så bytte h1 färg så jag gick in i css och satte
+          färgen till svart samtidigt skapade jag en hover så att texten lyser
+          blått när man håller musen över den för att visa att texten är en
+          länk. Frågeformulär. Eftersom sidan inte kan innehålla all information
+          så ska besökaren kunna skicka en förfrågan för mer specifik
+          information. Så för att uppfylla detta krav skapade jag en ny webbsida
+          där jag lade in ett frågeformulär. Innan jag började skriva in html
+          koden så öppnade jag paint och skapade rutor med text i sig så jag
+          visste hur många rutor jag behövde vart dom borde sättas i sidans
+          utlägg, jag markerade också vilka av rutorna som var krav och vilka
+          som var alternativ som kontaktinfo, email eller telefon nummer en
+          behövde vara ifylld men inte båda, båda kunde dock vara ifyllda. Jag
+          implementerade två radioknappar, som visar om du är privatperson eller
+          företag. Tillsammans med fyra text rutor, en för för och efternamn de
+          andra två för kontakt info. Detta i form av vanliga input type=”text”
+          för namnen och för email och telefonnummer använde jag type=”email”
+          och type=”tel” för respektive. Efter det la jag till tre textarea
+          element som frågade efter, anledning till frågan, beskrivning av
+          byggnaden i fråga, och själva frågan i själv. Textarea är bäst när vad
+          som inskrivs troligen kommer ha mer än 1 rad text eller en paragraph
+          vilket alla tidigare text värden skulle bestått av. Ovanför alla
+          element la jag till ett (label) som beskrev deras syfte. Och efter
+          varje element använde jag (br) för att starta på en ny linje. Jag
+          slutade med att lägga till en knapp för ivägskickning som inte gör
+          något. Utdelningen av information samt ifyllandet av sidor. Jag
+          började med att skapa tre paragrafer text på framsidan alla relevanta
+          till sprinkler och sprinkler system för att göra sidan mindre tom jag
+          gick sedan vidare till webbplatsen där jag hade lagt in mitt lokala
+          navigeringssystem och började sätta in text som jag skrivit i ett
+          separat dokument. Alla webbplatser inom denna röra sig kring samma
+          ämne, först när personen behöver ett sprinklersystem och sedan två
+          sidor en som förklarar tvårörssystem, rören som ger vatten till
+          sprinklers och den andra som pratade om de två varianterna av hur en
+          sprinkler vet när den går av där i la jag även mer allmän information
+          om dessa sprinkler. I mitt textdokument så hade jag skrivit upp tre
+          listor så när jag la in informationen på sidan skapade jag tre stycken
+          listor och återskapade listan. Jag delade upp infon jag la till i
+          sektioner och satte en headline som visade vad den handlade om. Jag
+          hade också gjort referenser till bilder i min text. Efter
+          modifikationer se bild redigering av bilderna så la jag till dom, jag
+          minskade deras storlek inom css genom att snabbt skapa en klass.
         </p>
       </section>
       <section>
@@ -128,10 +192,91 @@
             Detta så att sidans bakgrund skiner genom märket så att den vita
             bakgrunden inte bryter upp resten av sidans tema.
           </li>
+
+          <li>
+            Lagt till text rutor som kopplar en text till bilden för bättre
+            förklarningar.
+          </li>
         </ul>
       </section>
       <section>
         <h2>5. Utvärdering mot kravspecifikationen</h2>
+
+        <ul>
+          <li>
+            Allmän information om sprinkler system. <br />
+            <p>
+              På både framsidan och sprinkler information sidan så finns det
+              allmän information kring sprinkler, det skulle dock kunna läggas
+              till mer.
+            </p>
+          </li>
+          <li>
+            Specific information kring vissa sprinkler.<br />
+            <p>
+              Mer speciell information kan hittas under sprinkler information
+              fliken där man kan hitta info kring olika sprinkler system och
+              olika typer av sprinkler
+            </p>
+          </li>
+          <li>Information på vilka lokaler behöver ett sprinklersystem.</li>
+          <li>
+            Lista på företag som ligger i olika delar av sverige och inte alla
+            på samma plats.
+            <br />
+            <p>
+              Under fliken sprinkler företag så finns det länkar till fyra olika
+              sprinkler företag vart deras huvudkontor är finns också med.
+              Företagen är uppdelade så att 2 är i Svealand, 1 i Norrland och 1
+              i Götaland alltså över hela Sverige.
+            </p>
+          </li>
+          <li>
+            Fördelen med att ha ett sprinklersystem. <br />
+            <p>
+              Inom sprinklersystem-behöver du sprinkler fliken finns det en
+              lista med fördelar av att ha ett sprinkler system.
+            </p>
+          </li>
+          <li>
+            Varför lokalen behöver ett sprinklersystem. <br />
+            <p>
+              Inom sprinkler system tabben finns information som lägger ut när
+              man behöver ett sprinkelr system enlight lag men också varför man
+              kan behöva ett sprinkler system utanför det.
+            </p>
+          </li>
+        </ul>
+        <h3>Funktion</h3>
+        <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
+        <ul>
+          <li>
+            Användaren ska kunna avgöra om deras lokal behöver installera ett
+            sprinklersystem. <br />
+            <p>
+              Ja användaren kan avgöra detta genom att först se om deras byggnad
+              måste ha sprinkler enligt lag sedan om dom kommer behöva sprinkler
+              av någon annan anledning
+            </p>
+          </li>
+          <li>
+            Hitta ett företag sprinkler företag installerar system.<br />
+            <p>
+              Företagen är uppdelade så att 2 är i Svealand, 1 i Norrland och 1
+              i Götaland alltså över hela Sverige så man kan hitta ett företag i
+              olika delar av Sverige.
+            </p>
+          </li>
+          <li>
+            Kunna fråga efter mer information ifall de inte kan hitta vad dom
+            behöver veta genom andra delar av sidan i form av ett formulär.
+            <br />
+            <p>
+              Det finns ett frågeformulär som enkelt kan fyllas i och skickas
+              för råd kring sprinkler.
+            </p>
+          </li>
+        </ul>
         <!-- Kopiera din kravspecifikation hit. Efter varje punkt lägger du till en kort mening som motiverar hur kravet är uppfyllt eller motiverar varför det inte är uppfyllt. -->
       </section>
     </main>

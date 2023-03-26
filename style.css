@@ -15,18 +15,13 @@ body {
   width: fit-content;
 }
 
-.image-frame
-{  
-padding: 5px;
+.image-frame {
+  padding: 5px;
 }
 
-
-
-.image-frame img
-{
-width: 20%;
+.image-frame img {
+  width: 20%;
 }
-
 
 .company-grid {
   display: grid;
